@@ -1,0 +1,7 @@
+<div class="container">
+    <form [formGroup]="addTask"> 
+        <input type="text" formControlName="text" placeholder="Write your message here">
+        <!--<input type="text" formControlName="id" placeholder="id">-->
+        <input type="submit" value="Submit"  (click)="onAddTaskClicked(addTask)">
+    </form>
+</div>

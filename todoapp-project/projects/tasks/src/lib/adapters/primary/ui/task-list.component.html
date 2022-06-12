@@ -1,1 +1,17 @@
-<ul><li *ngFor="let task of tasks$ | async">{{ task.id }}</li></ul>
+<div class="container">
+    <div class="form-check" *ngFor="let task of tasks$ | async">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          {{task.text}}
+        </label>
+        <div>
+            <a href="/tasks" class="text-reset">reset link</a>
+        </div>
+    </div>    
+</div>
+
+<!--<ul class="list-unstyled">
+    <li *ngFor="let task of tasks$ | async">
+        {{ task.id }}
+    </li>
+</ul>-->
