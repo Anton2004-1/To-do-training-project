@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+      <div class="col-4" *ngFor="let picture of pictures$ | async">
+        <img style="width:100%; height: 250px;" [src]="picture.image">
+      </div>
+    </div>
+  </div>
