@@ -5,7 +5,7 @@
           {{task.text}}
         </label>
         <div>
-            <a href="/tasks" class="text-reset">reset link</a>
+            <a  (click)="onTasksClicked(task.id)" class="text-reset">Delete</a>
         </div>
     </div>    
 </div>

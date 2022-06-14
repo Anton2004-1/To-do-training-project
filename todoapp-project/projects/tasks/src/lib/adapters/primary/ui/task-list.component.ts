@@ -10,4 +10,8 @@ export class TaskListComponent {
 
   constructor(@Inject(GETS_ALL_TASK_DTO) private _getsAllTaskDto: GetsAllTaskDtoPort, @Inject(REMOVES_TASK_DTO) private _removesTaskDto: RemovesTaskDtoPort) {
   }
+
+  onTasksClicked(id: string): void {
+    this._removesTaskDto.remove(id);
+  }
 }
